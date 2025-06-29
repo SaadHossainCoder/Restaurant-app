@@ -1,0 +1,120 @@
+@font-face {
+    font-family: NotoSans;
+    src: url('../src/assets/font/NotoSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: Preahvihear;
+    src: url('../src/assets/font/Preahvihear-Regular.ttf');
+}
+
+@font-face {
+    font-family: Ubuntu;
+    src: url('../src/assets/font/Ubuntu-Regular.ttf');
+}
+
+@import "tailwindcss";
+
+@layer base {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html, body {
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+        font-family: "Ubuntu", serif;
+
+        scroll-behavior: smooth;
+        background-color: #ffffff;
+    }
+
+
+
+    .hide-scroll-bar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    .hide-scroll-bar::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* gride-> admin */
+    .parent {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+    }
+
+    .div1 {
+        grid-area: 1 / 1 / 6 / 2;
+    }
+
+    .div2 {
+        grid-area: 1 / 2 / 3 / 3;
+    }
+
+    .div3 {
+        grid-area: 1 / 3 / 3 / 4;
+    }
+
+    .div4 {
+        grid-area: 1 / 4 / 3 / 5;
+    }
+
+    .div5 {
+        grid-area: 3 / 2 / 6 / 3;
+    }
+
+    .div6 {
+        grid-area: 3 / 3 / 6 / 4;
+    }
+
+    .div7 {
+        grid-area: 3 / 4 / 6 / 5;
+    }
+
+    .div8 {
+        grid-area: 1 / 5 / 4 / 6;
+    }
+
+    .div9 {
+        grid-area: 4 / 5 / 6 / 6;
+    }
+
+    /* .gride_patten {
+        width: 100%;
+        height: 100%;
+        --color: #f1f1f1;
+        background-color: #ffffff;
+        background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%, transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%, transparent),
+            linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%, transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%, transparent);
+        background-size: 55px 55px;
+    } */
+
+
+    /* .container {
+    width: 100%;
+    height: 100%;
+    
+    background-color: #ffffff;
+    background-image: radial-gradient(rgba(12, 12, 12, 0.171) 2px, transparent 0);
+    background-size: 30px 30px;
+    background-position: -5px -5px;
+} */
+
+}
+
+@theme {
+    --breakpoint-3xl: 110rem;
+    --font-h1: "Ubuntu", serif;
+    --font-h1_sc: "Noto Sans", serif;
+    --font-p: "Preahvihear", serif;
+    --shadow-top1: [0px_-2px_6px_rgba(156, 156, 156, 0.2)]
+}

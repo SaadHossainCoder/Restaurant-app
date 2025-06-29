@@ -1,0 +1,79 @@
+src/
+  assets/
+    images/
+    styles/
+  components/
+    common/
+      Button.jsx
+      Input.jsx
+      Modal.jsx
+    layout/
+      Header.jsx
+      Sidebar.jsx
+    menu/
+      MenuItem.jsx
+      MenuList.jsx
+      MenuCategory.jsx
+    order/
+      OrderItem.jsx
+      OrderList.jsx
+      OrderSummary.jsx
+    table/
+      TableItem.jsx
+      TableList.jsx
+  contexts/
+    AuthContext.js
+    MenuContext.js
+    OrderContext.js
+  hooks/
+    useAuth.js
+    useMenu.js
+    useOrder.js
+  pages/
+    Login.jsx
+    Dashboard.jsx
+    Menu.jsx
+    Orders.jsx
+    Tables.jsx
+    Settings.jsx
+  routes/
+    AppRoutes.jsx
+  services/
+    api.js
+    authService.js
+    menuService.js
+    orderService.js
+  utils/
+    helpers.js
+    constants.js
+  App.jsx
+  index.js
+
+//   text-------------------
+
+// assets:-  Contains static files such as images and global styles.
+// components:-  Houses reusable UI components, further divided into common, layout, menu, order, and table-related components.
+// contexts:- Manages global state using React Context API for authentication, menu data, and orders.
+// hooks:- Contains custom hooks for accessing and manipulating state and data.
+// pages:- Defines the structure and logic for different application pages.
+// routes:- Configures navigation using React Router.
+// services:- Handles API interactions and business logic, separating concerns for authentication, menu, and orders.
+// utils:- Includes helper functions and constants.
+// App.jsx:- The root component that renders the main application structure.
+// index.js:- The entry point of the application.
+
+// -------------------
+"BUG",
+"SEE NOTES",
+"HACK",
+"FIXME",
+"RECHECK",
+"INCOMPLETE",
+"TODO",
+"NOTE",
+"POST",
+"USEFUL",
+"LEARN",
+"COMMENT",
+"[ ]",
+"[x]"
